@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Comp_482/Comp_482.iml" filepath="$PROJECT_DIR$/Comp_482/Comp_482.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch06_Methods/ch06_Methods.iml" filepath="$PROJECT_DIR$/ch06_Methods/ch06_Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07_Arrays/ch07_Arrays.iml" filepath="$PROJECT_DIR$/ch07_Arrays/ch07_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch09_Objects_Classes/ch09_Objects_Classes.iml" filepath="$PROJECT_DIR$/ch09_Objects_Classes/ch09_Objects_Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch10_Objects_Oriented/ch10_Objects_Oriented.iml" filepath="$PROJECT_DIR$/ch10_Objects_Oriented/ch10_Objects_Oriented.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch11_Inheritance_Polymorphism/ch11_Inheritance_Polymorphism.iml" filepath="$PROJECT_DIR$/ch11_Inheritance_Polymorphism/ch11_Inheritance_Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning_java.iml" filepath="$PROJECT_DIR$/learning_java.iml" />
+    </modules>
+  </component>
+</project>
