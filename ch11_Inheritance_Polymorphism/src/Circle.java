@@ -12,9 +12,10 @@ public class Circle extends GeometricObject {
     }
 
     public Circle(double radius, String color, boolean filled) {
+        super(color, filled);
         this.radius = radius;
-        setColor(color);
-        setFilled(filled);
+//        setColor(color);
+//        setFilled(filled);
     }
 
     public double getRadius() {
@@ -44,5 +45,13 @@ public class Circle extends GeometricObject {
     public void printCircle() {
         System.out.println("The circle is created " + getDateCreated() +
                 " and the radius is " + radius);
+    }
+
+    // Override the toString method defined in the superclass
+    // @Override denotes that method is required to override a method in superclass.
+    // Otherwise it will report an error if the method does not override it's superclass's method.
+    @Override
+    public String toString() {
+        return super.toString() + "\nradius is " + radius;
     }
 }

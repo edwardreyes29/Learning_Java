@@ -17,3 +17,69 @@
     Constructor chaining: subclass constructor invokes its superclass constructor, and if
         superclass is derived from another class, will invoke superclass constructor before
         performing it's own tasks.
+
+    (!) if class is designed to be extended, provide a no-arg constructor
+
+    DESIGN GUIDE: You should provide a no-arg constructor for every class.
+
+    >>> Calling superclass methods
+
+        super.method(parameters)
+
+B. Overriding Methods
+    To override method, method must be defined in subclass using same signature and return type.
+
+    Static methods can be inherited, but cannot be overridden.
+
+    If superclass static method is redfined in sublcass, it becomes hiddent.
+    Hidden static methods can be invoked using:
+        SuperClassName.staticMethodName
+
+C Overriding v. Overloading
+
+    Overloading: defined multiple methods w/ same name but diff signatures.
+
+    Overriding meand to provide new implementation for a method in subclass.
+        - use sname signature and same return type.
+
+D. Object Class and its toString() method
+
+    (!) Every class in Java is descended from java.lang.Object class
+
+    (!) Important to be familiar with methods provided in Object class so you can use them in your classes.
+
+    Usually override toString()
+
+E. Polymorphism
+
+    (!) A variable of a supertype can refer to a subtype object.
+
+    Circle is a subtype of GeometricObject
+    GeometricObject is a supertype of Circle
+
+    You can always pass an instance of a sublcass to a parameter of its superclass type.
+
+    An object of a subclass can be used wherever its superclass object is used.
+
+
+F. Dynamic Binging
+
+    A method can be implemented several classes along inheritance chain.
+    JVM decides which method is invoked at runtime.
+
+    Ex.
+        Object o = new GeometricObject();
+        System.out.println(o.toString());
+
+    Declared type: o's declared type is Object.
+    Actual type: the actual class for the object reference by the variable.
+        o's actual type is GeometricObject, b/c o references  an object created
+        using 'new GeometricObject()'.
+
+    toString method invoked by o is determined by o's actual type. (Dynamic binding)
+
+
+    Sps. o is an instance of C1, C2,...Cn-1, Cn, where C1 is a subclass of C2, C2 is
+    a subclass of C3,..., and Cn-1 is a subclass of Cn. If o invokes a method p. JVM
+    searches for the implementation of the method p in C1, C2,..., Cn-1, and Cn, in this
+    order until it is found. First-round implementation is invoked after search stops.
