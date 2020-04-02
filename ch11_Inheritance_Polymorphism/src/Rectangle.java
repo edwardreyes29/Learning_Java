@@ -13,8 +13,8 @@ public class Rectangle extends GeometricObject {
                      boolean filled) {
         this.width = width;
         this.height = height;
-        setColor(color);
-        setFilled(filled);
+        setColor(color); // this.color = color won't work, can only be accessed in GeometricObject class.
+        setFilled(filled); // Only way to read & modify color & filled is through their getter and setter methods.
     }
 
     public double getWidth() {

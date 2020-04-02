@@ -1,0 +1,19 @@
+11.3 Using super keyword
+
+    this -> references calling object
+    super -> refers to superlass of the class in which super appears
+
+    Used for:
+        * calling superclass constructor
+        * call superclass method
+
+    super() -> no-arg constructor
+    super(parameters) invokes superclass constructor that matches the param/args.
+
+    super(color, filled) -> instead of calling the setter methods
+
+    super() is automatically the first statemnet in constructor if no constructor is invoked.
+
+    Constructor chaining: subclass constructor invokes its superclass constructor, and if
+        superclass is derived from another class, will invoke superclass constructor before
+        performing it's own tasks.
